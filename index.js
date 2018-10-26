@@ -1,9 +1,9 @@
 var postcss = require("postcss");
 module.exports = postcss.plugin("postcss-test-plugin", function() {
     return function(root) {
-        var hasOverflowHidden = false;
-        var hasBorderRadius = false;
         root.walkRules(function(rule) {
+            var hasOverflowHidden = false;
+            var hasBorderRadius = false;
             rule.walkDecls(/^overflow-?/, function(decl) {
                 if (decl.value === "hidden") {
                     hasOverflowHidden = true;
