@@ -1,6 +1,6 @@
 {
   "name": "postcss-safari-border-plugin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "PostCSS plugin to solve problem when using border-radius + overflow: hidden + transform",
   "keywords": [
     "postcss",
