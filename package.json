@@ -1,0 +1,38 @@
+{
+  "name": "postcss-safari-border-plugin",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to solve problem when using border-radius + overflow: hidden + transform",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "safari border bug"
+  ],
+  "author": "luzhipeng <luzhipeng@duiba.com.cn>",
+  "license": "MIT",
+  "repository": "azl397985856/postcss-safari-border-plugin",
+  "bugs": {
+    "url": "https://github.com/azl397985856/postcss-safari-border-plugin/issues"
+  },
+  "homepage": "https://github.com/azl397985856/postcss-safari-border-plugin",
+  "dependencies": {
+    "postcss": "^6.0.16"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^22.4.2"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
